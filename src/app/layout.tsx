@@ -1,16 +1,5 @@
 import type { Metadata } from "next";
-import {
-  Inter_Tight,
-  Playfair_Display,
-  Roboto,
-  Open_Sans,
-  Lato,
-  Montserrat,
-  Poppins,
-  Raleway,
-  Ubuntu,
-  Nunito
-} from "next/font/google";
+import { Inter_Tight, Playfair_Display, Roboto, Open_Sans, Lato, Montserrat, Poppins, Raleway, Ubuntu, Nunito } from "next/font/google";
 import "./globals.css";
 import { PostHogWrapper } from "@/components/PostHogWrapper";
 import AuroraBackground from "@/components/background/AuroraBackground";
@@ -78,16 +67,7 @@ const nunito = Nunito({
 
 export const metadata: Metadata = {
   title: "Sweet Delights | Artisanal Bakery & Fresh Daily Treats",
-  description: "Experience the magic of freshly baked goods at Sweet Delights. Artisanal breads, pastries, and treats made daily with premium ingredients.",
-  openGraph: {
-    title: "Sweet Delights Bakery",
-    description: "Artisanal breads, pastries, and treats made fresh daily",
-    siteName: "Sweet Delights",
-    images: [{
-      url: "https://images.pexels.com/photos/4906454/pexels-photo-4906454.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-      alt: "Sweet Delights Bakery Display"
-    }]
-  }
+  description: "Experience the magic of freshly baked goods at Sweet Delights. Artisanal breads, pastries, and treats made daily with premium ingredients."
 };
 
 export default function RootLayout({
